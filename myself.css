@@ -1,0 +1,17 @@
+body {
+    margin: 1rem;
+    background-image: linear-gradient(rgba(0,0,0,.4) 0%, rgba(0,0,0,.4) 100%), url(../blog/jerome.jpg);
+    background-size:
+        cover,
+        cover;
+    background-position:
+    50% 50%,
+    50% 50%;
+    color: #fff;
+    padding: 4rem 0;
+    box-sizing: border-box;
+    min-height: 30rem;
+}
+img {
+    width: 36%;
+}
