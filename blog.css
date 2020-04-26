@@ -34,8 +34,14 @@ html {
     text-align: right;
     padding-block-start: 1rem;
   }
+  section:nth-of-type(1):hover {
+    background-color: black;
+    text-shadow: 2px 1px red;
+    color: cornsilk;
+  }
+
 section:nth-of-type(2) {
-  text-align: center;
+  margin: 2rem;
 }
   nav li {
     display: inline-block;
@@ -52,6 +58,21 @@ section:nth-of-type(2) {
     margin: 0;
     font-size: 1.5rem;
   }
+  p {
+    margin-right: 1rem;
+  }
+  p:hover {
+    transform-origin: bottom right 60px;
+    background-color: black;
+    transform: translate(-100%, 25%) rotate(10deg) translate(100%, -50%);
+    transition-duration: 5s;
+    color: white;
+  }
+  img {
+    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+    transition-duration: 40s;
+    animation-iteration-count: 2, 0, infinite;
+  }
   
   @media (min-width: 480px) {
    h1 {
@@ -59,16 +80,28 @@ section:nth-of-type(2) {
     }
   }
   .clip {
+    position: relative;
     clip-path: circle(46.5% at 50% 44%);
+  }
+  .clip:hover {
+    animation-name: slide;
   }
   footer > div a {
     background-color: red;
     color: white;
     border-radius: 20px 2px;
-    margin-top: 6rem;
-    margin-left: 2rem;
+    margin-top: 18rem;
     text-decoration: none;
     padding: .5rem;
     display: flex;
     float: right;
   }
+  .canoe {
+    width: 40%;
+    clip-path: polygon(59% 47%, 68% 48%, 70% 50%, 66% 57%, 50% 62%, 34% 59%, 27% 53%, 26% 49%, 38% 47%);
+    /*
+    clip-path: polygon(59% 47%, 68% 48%, 70% 50%, 66% 57%, 50% 62%, 34% 59%, 27% 53%, 26% 48%, 38% 47%);
+  
+  clip-path: polygon(59% 47%, 67% 48%, 70% 50%, 66% 57%, 53% 61%, 34% 59%, 27% 53%, 26% 49%, 34% 47%);
+  */
+}
