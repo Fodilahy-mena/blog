@@ -38,6 +38,7 @@ html {
     background-color: black;
     text-shadow: 2px 1px red;
     color: cornsilk;
+    transition-duration: 4s;
   }
 
 section:nth-of-type(2) {
